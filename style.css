@@ -1,0 +1,88 @@
+* {
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+}
+
+h2 {
+   font-family: 'roboto';
+   padding: 15px 0px 15px 10px;
+}
+
+p {
+   padding: 15px 0px 15px 10px;
+}
+
+ul {
+   width: 340px;
+   font-family: 'roboto', sans-serif;
+   float: left;
+   margin: 5px;
+}
+
+li {
+   color: #111;
+   font-size: 12px;
+   padding: 10px 12px;
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+   position: relative;
+}
+
+li::before {
+   content: '';
+   position: absolute;
+   top: 0; left: 0; bottom: 0; right: 0;
+   background-color: white;
+   opacity: 0;
+}
+
+li:hover::before {
+   opacity: .1;
+}
+
+ul li:first-child {
+   display: flex;
+   flex-direction: column;
+   padding: 18px 12px;
+   text-align: center;
+}
+
+ul li:first-child span:first-child {
+   margin-bottom: -1px;
+   font-size: 18px;
+}
+
+.strawberry:first-of-type,
+.strawberry:nth-last-child(-n+3),
+
+.orange:first-of-type,
+.orange:nth-last-child(-n+2),
+
+.banana:last-of-type,
+
+.lime:first-of-type,
+.lime:nth-last-child(-n+2),
+
+.mint:nth-last-child(-n+2),
+
+.blueberry:first-of-type,
+.blueberry:nth-last-child(-n+2),
+
+.grape:first-of-type,
+.grape:nth-last-child(-n+3),
+
+.bubblegum:first-of-type,
+.bubblegum:nth-last-child(-n+3),
+
+.cocoa,
+
+.silver:nth-last-child(-n+2),
+
+.slate:first-of-type,
+.slate:nth-last-child(-n+4),
+
+.black
+{
+   color: white;
+}
